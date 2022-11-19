@@ -1,0 +1,9 @@
+footer{
+    background-image: linear-gradient(0deg,#200038,#cecece);
+    height: 66px;
+    padding-top: 17px;
+    color: white;
+    position: absolute;
+    width: 100%;
+    margin-top: 90px;
+}

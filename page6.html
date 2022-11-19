@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/header.css">
+    <link rel="stylesheet" href="./style/footer.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/index.js"></script>
+    <style>
+        p{
+            font-size: 77%;
+        }
+        @media (max-width:768px) {
+            form {
+                width: 95%;
+                min-height: 30rem !important;
+                /* background: red; */
+            }
+
+            label,
+            input,
+            .dropdown-select {
+                margin-left: 2%;
+            }
+            .heading{
+                font-size: 91%;
+                text-align: center;
+            }
+            .inner-navigation{
+                margin: auto !important;
+                font-size: 78%;
+                margin-left: 0 !important;
+            }
+            .col-xl-4{
+                margin-bottom: 24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="container"> -->
+    <!-- <div class="">
+        <a class="btn btn-dark" style="margin-left: 0;" href="page4.html">back</a>
+    </div> -->
+    <nav>
+        <div class="d-flex">
+            <img class="logo" src="./images/cropped-fish.jpg" alt="" srcset="">
+            <!-- </div> -->
+            <!-- <div> -->
+            <h3>Fisheries</h3>
+            <!-- </div> -->
+        </div>
+        <!-- <div class=".main-progress-container">
+            <div class="progress-container">
+              <div class="progress" id="progress"> </div>
+              <div class="circle active">25%</div>
+              <div class="circle">50%</div>
+              <div class="circle">75%</div>
+              <div class="circle">100%</div>
+            </div>
+          </div> -->
+    </nav>
+    <form class="">
+        <!-- <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">tion</label>
+            </div> -->
+        <h3 class="heading" style="margin-bottom: 4%; margin-top: 0;">VESSEL DESCRIPTION</h3>
+        <div class="row">
+            <div class="col-xl-4">
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Year built</label>
+                    <input type="number" class="form-control bg-light" id="exampleInputPassword1"
+                        placeholder="Enter year built">
+                </div>
+            </div>
+            <div class="col-xl-4">
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Place built</label>
+                    <input type="text" class="form-control bg-light" id="exampleInputPassword1"
+                        placeholder="Enter year built">
+                </div>
+
+            </div>
+            <div class="col-xl-4">
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Ownership Type</label>
+                    <select name="" class="bg-light">
+                        <option value="individual">New</option>
+                        <option value="Group">Mint</option>
+                        <option value="business">Good</option>
+                        <option value="business">Degraded</option>
+                    </select>
+                </div>
+
+            </div>
+        </div>
+        <hr style="width: 96%;color: #c1c1c1;    margin-top: 25px;">
+        <div class="row">
+            <div class="col-xl-4">
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Type of vessel</label>
+                    <select name="" class="bg-light">
+                        <option value="individual">Balam</option>
+                        <option value="Group">Chandi</option>
+                        <option value="business">Sampan</option>
+                        <option value="business">Danish Boat</option>
+                        <option value="business">Others</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-xl-4">
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Hull material</label>
+                    <select name="" class="bg-light">
+                        <option value="individual">Steel</option>
+                        <option value="Group">Wood</option>
+                        <option value="business">Aluminium</option>
+                        <option value="business">plastic Boat</option>
+                        <option value="business">Fiberglass/FRP</option>
+                        <option value="business">Other</option>
+                    </select>
+                </div>
+
+            </div>
+            <div class="col-xl-4">
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Color(choice)</label>
+                    <select name="" class="bg-light">
+                        <option value="individual">Black</option>
+                        <option value="Group">Green</option>
+                        <option value="business">Yellow</option>
+                        <option value="business">Purple Boat</option>
+
+                        <option value="business">Red</option>
+                        <option value="business">Blue</option>
+                        <option value="business">Unpainted</option>
+                        <option value="business">Other</option>
+                    </select>
+                </div>
+
+            </div>
+        </div>
+        <hr style="width: 96%;color: #c1c1c1;    margin-top: 25px;">
+        <div class="row">
+            <div class="col-xl-4">
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Vessel photo</label>
+                    <input type="file" class="form-control" id="exampleInputPassword1">
+                    <p>Click here to upload file. (< 5MB)</p>
+                </div>
+            </div>
+            <div class="col-xl-4">
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Length (m) of vessel</label>
+                    <input type="float" class="form-control bg-light" id="exampleInputPassword1"
+                        placeholder="Enter year built">
+                </div>
+
+            </div>
+            <div class="col-xl-4">
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Length (m) of vessel</label>
+                    <input type="float" class="form-control bg-light" id="exampleInputPassword1"
+                        placeholder="Enter year built">
+                </div>
+
+            </div>
+        </div>
+        <hr style="width: 96%;color: #c1c1c1;    margin-top: 20px;">
+        <div class="row">
+            <div class="col-xl-4">
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Length (m) of vessel</label>
+                    <input type="float" class="form-control bg-light" id="exampleInputPassword1"
+                        placeholder="Enter year built">
+                </div>
+            </div>
+            <div class="col-xl-4">
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Width (m) of vessel</label>
+                    <input type="float" class="form-control bg-light" id="exampleInputPassword1"
+                        placeholder="Enter year built">
+                </div>
+
+            </div>
+            <div class="col-xl-4">
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Depth (m) of vessel</label>
+                    <input type="float" class="form-control bg-light" id="exampleInputPassword1"
+                        placeholder="Enter year built">
+                </div>
+
+            </div>
+        </div>
+        <hr style="width: 96%;color: #c1c1c1;    margin-top: 25px;">
+        <div class="row">
+            <div class="col-xl-4">
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Gross Tonnage</label>
+                    <input type="string" class="form-control bg-light" id="exampleInputPassword1"
+                        placeholder="Enter year built">
+                </div>
+            </div>
+            <div class="col-xl-4">
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Net Tonnage</label>
+                    <input type="string" class="form-control bg-light" id="exampleInputPassword1"
+                        placeholder="Enter year built">
+                </div>
+
+            </div>
+            <div class="col-xl-4">
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Other (multi) color
+                        description</label>
+                    <input type="text" class="form-control bg-light" id="exampleInputPassword1"
+                        placeholder="Enter year built">
+                </div>
+
+            </div>
+        </div>
+        <hr style="width: 96%;color: #c1c1c1;    margin-top: 25px;">
+        <div class="row">
+            <div class="col-xl-4">
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Fish hold capacity (MT)</label>
+                    <input type="string" class="form-control bg-light" id="exampleInputPassword1"
+                        placeholder="Enter year built">
+                </div>
+            </div>
+            <div class="col-xl-4">
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Engine#</label>
+                    <input type="number" class="form-control bg-light" id="exampleInputPassword1"
+                        placeholder="Enter year built">
+                </div>
+
+            </div>
+            <div class="col-xl-4">
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Make/model</label>
+                    <input type="string" class="form-control bg-light" id="exampleInputPassword1"
+                        placeholder="Enter year built">
+                </div>
+
+            </div>
+        </div>
+        <hr style="width: 96%;color: #c1c1c1;    margin-top: 25px;">
+        <div class="row">
+            <div class="col-xl-4">
+                <div class="">
+                    <label for="exampleInputPassword1" class="form-label">Power (BHP)</label>
+                    <input type="string" class="form-control bg-light" id="exampleInputPassword1"
+                        placeholder="Enter year built">
+                </div>
+            </div>
+        </div>
+        <hr style="width: 96%;color: #c1c1c1;    margin-top: 25px;">
+        </div>
+        <div class="navigation-button">
+            <div class="d-flex inner-navigation" style="margin-left: 63%;">
+                <div>
+                    <a class="btn btn-dark" href="page4.html">go back</a>
+                </div>
+                <div style="">
+                    <a href="page7.html" class="btn btn-primary float-right" style="">Next Page</a>
+                </div>
+
+            </div>
+        </div>
+    </form>
+    <footer class="text-center">
+        <p style="vertical-align: middle;">Copyright-2022</p>
+    </footer>
+</body>
+
+</html>
