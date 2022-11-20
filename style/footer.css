@@ -3,12 +3,24 @@ footer {
     width: 100%;
     top: 129%;
     padding-top: 89px;
+    position: relative;
 }
 
-.footer-background{
+.footer-background {
     position: absolute;
 }
 
-.social{
-    position:absolute;
+.social {
+    position: absolute;
+    top: 81%;
+    left: 48%;
+    font-size: 30px;
+}
+
+@media (max-width:768px) {
+    .social {
+        left: 42%;
+        font-size: 24px;
+        margin: auto;
+    }
 }
