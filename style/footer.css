@@ -1,9 +1,14 @@
-footer{
-    background-image: linear-gradient(0deg,#200038,#cecece);
-    height: 66px;
-    padding-top: 17px;
-    color: white;
-    position: absolute;
+footer {
+    margin: auto;
     width: 100%;
-    margin-top: 90px;
+    top: 129%;
+    padding-top: 89px;
+}
+
+.footer-background{
+    position: absolute;
+}
+
+.social{
+    position:absolute;
 }

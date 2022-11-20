@@ -26,9 +26,19 @@
         }
 
         @media(max-width:768px) {
+            .row {
+                margin-top: 0% !important;
+            }
+
             form {
-                width: 95% !important;
+                width: 100% !important;
                 min-height: 26rem !important;
+            }
+
+            .or {
+                width: 45px;
+                padding: 10px;
+                top: 96%;
             }
 
             .left-panel-holder {
@@ -36,9 +46,13 @@
                 margin-left: 4%;
             }
 
-            .other-login-holder{
+            .other-login-holder {
                 width: 95%;
             }
+        }
+
+        form {
+            min-height: 26rem !important;
         }
     </style>
 </head>
@@ -60,14 +74,14 @@
             </div>
         </div>
         <div class="col-lg-6">
-            <form style="margin: auto;width: 35%;" class="my-3">
+            <form style="margin: auto;" class="my-3 p-4">
                 <h4 style="margin-bottom: 4%;font-size: 16px;font-weight: bolder;">Log in to your account</h4>
-                <div class=" mt-4 mb-3">
+                <div class=" mt-4 mb-3 input-holder">
                     <!-- <label for="exampleInputEmail1" class="form-label">Enumerator ID</label> -->
                     <input type="number" class="form-control bg-light" id="exampleInputEmail1"
                         aria-describedby="emailHelp" placeholder="Email">
                 </div>
-                <div class="mb-3">
+                <div class="mb-3 input-holder">
                     <!-- <label for="exampleInputPassword1" class="form-label">Provisional Vessel ID</label> -->
                     <input type="number" class="form-control bg-light" id="exampleInputPassword1"
                         placeholder="Password">
