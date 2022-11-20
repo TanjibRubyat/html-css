@@ -21,8 +21,24 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style/login.css">
     <style scoped>
-        body{
-            overflow-x:hidden;
+        body {
+            overflow-x: hidden;
+        }
+
+        @media(max-width:768px) {
+            form {
+                width: 95% !important;
+                min-height: 26rem !important;
+            }
+
+            .left-panel-holder {
+                width: 96%;
+                margin-left: 4%;
+            }
+
+            .other-login-holder{
+                width: 95%;
+            }
         }
     </style>
 </head>

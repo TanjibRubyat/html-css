@@ -18,17 +18,22 @@ form {
     margin: auto;
     /* margin-bottom: 10%; */
     position: relative;
-    padding: 3%;
+    /* padding: 3%; */
     width: 70%;
     min-height: 47rem !important;
     padding-bottom: 6%;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
-
+.row{
+    margin-left: 7%;
+    width: 87%;
+}
 
 .heading {
-    background-image: linear-gradient(270deg, #ddd, #f7f7f7);
+    /* background-image: linear-gradient(270deg, #ddd, #f7f7f7); */
+    background-image: linear-gradient(90deg,#683091,#f7f7f7);
+    color: white;
     padding: 2%;
     font-size: 130%;
     width: 100%;
@@ -55,7 +60,7 @@ form {
 
 .inner-navigation {
     justify-content: end;
-
+    padding-inline: 5%;
 }
 
 @media all and (max-width:116%) {
