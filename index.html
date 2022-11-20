@@ -17,12 +17,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
         integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="./js/index.js"></script>
     <style>
-        .input-holder{
+        .input-holder {
             width: 76%;
             margin: auto;
         }
+
         @media (max-width:768px) {
             form {
                 width: 94% !important;
@@ -60,13 +64,63 @@
 </head>
 
 <body>
-    <nav>
+    <div class="navbar-sticky">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Fisheries</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <!-- <a class="nav-link" href="#">Features</a>
+                    <a class="nav-link" href="#">Pricing</a>
+                    <a class="nav-link disabled">Disabled</a> -->
+                        <div class="nav-link">
+
+                        </div>
+                    </div>
+                    <div class="dropdown" style="margin-left: 80%;">
+
+                        <i id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"
+                            class="fa-solid fa-user"></i>
+
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                            <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <header>
         <div class="d-flex">
             <img class="logo" src="./images/cropped-fish.jpg" alt="" srcset="">
             <!-- </div> -->
             <!-- <div> -->
-            <h3>Fisheries</h3>
+            <div class="" style="display: block;width:53%;">
+                <h4 id="header-top">Fishing Boats and Gears Database Update</h4>
+                <h5 id="header-bottom" style="">Sustainable Coastal and Marine Fisheries Project</h5>
+            </div>
+
+
             <!-- </div> -->
+        </div>
+        <p id="dept-of-fisheries" style="">Department of Fisheries</p>
+        <div class="d-flex">
+            <div data-v-1e54327c="" class="gv_course_learn_progress_block">
+                <span data-v-1e54327c="" class="start-step"><i data-v-1e54327c=""
+                        class="fa fa-flag-checkered"></i></span>
+                <span data-v-1e54327c="" class="end-step"><span data-v-1e54327c=""><i data-v-1e54327c=""
+                            class="fa fa-trophy"></i></span></span>
+                <span data-v-1e54327c="" class="inner-border"></span>
+
+            </div>
         </div>
         <!-- <div class="progress-container">
             <div class="progress">
@@ -79,71 +133,70 @@
                 <div class="step" id="3"></div>
             </div>
         </div> -->
-    </nav>
+    </header>
     <!-- <div class="card" style="width: 18rem;"> -->
-        <!-- <img src="..." class="card-img-top" alt="..."> -->
-        <!-- <div class="card-body"> -->
-            <form style="margin: auto;width: 50%;" class="my-3">
-                <h4 class="heading card-header" style="margin-bottom: 4%;">Motorized Craft and Gear Survey</h4>
-                <div class=" mb-3 input-holder">
-                    <label for="exampleInputEmail1" class="form-label">Enumerator ID</label>
-                    <input type="number" class="form-control bg-light" id="exampleInputEmail1"
-                        aria-describedby="emailHelp" placeholder="Enter enumerator id">
-                </div>
-                <hr style="color: #c1c1c1;    margin-top: 25px;">
-                <div class="mb-3 input-holder">
-                    <label for="exampleInputPassword1" class="form-label">Provisional Vessel ID</label>
-                    <input type="number" class="form-control bg-light" id="exampleInputPassword1"
-                        placeholder="Enter provisional vessel id">
-                </div>
-                <hr style="color: #c1c1c1;    margin-top: 25px;">
-                <div class="mb-5 pb-3 input-holder">
-                    <label for="exampleInputPassword1" class="form-label">Vessel Class</label>
-                    <select name="" class="bg-light">
-                        <option value="individual">Motorized Marine</option>
-                        <option value="Group">Motorized Coastal</option>
-                        <option value="Group">Motorized River & Coastal</option>
-                    </select>
-                </div>
-                <hr style="color: #c1c1c1;    margin-top: 25px;">
-                <div class="mb-3 input-holder">
-                    <label for="exampleInputPassword1" class="form-label">Survey Location</label>
-                    <input type="number" class="form-control bg-light" id="exampleInputPassword1"
-                        placeholder="Enter provisional vessel id">
-                </div>
-                <hr style="color: #c1c1c1;    margin-top: 25px;">
-                <div class="mb-3 input-holder">
-                    <label for="exampleInputEmail1" class="form-label">Vessel Name</label>
-                    <input type="number" class="form-control bg-light" id="exampleInputEmail1"
-                        aria-describedby="emailHelp">
-                </div>
-                <hr style="color: #c1c1c1;    margin-top: 25px;">
-                <div class="mb-3 input-holder">
-                    <label for="exampleInputPassword1" class="form-label">Provisional Vessel ID</label>
-                    <input type="number" class="form-control bg-light" id="exampleInputPassword1">
-                </div>
-                <hr style="color: #c1c1c1; margin-top: 25px;">
-                <div class="mb-5 pb-3 input-holder">
-                    <label for="exampleInputPassword1" class="form-label">Name Engraved</label>
-                    <select name="" class="bg-light">
-                        <option value="individual">Yes</option>
-                        <option value="Group">No</option>
-                    </select>
-                </div>
-                <hr style="color: #c1c1c1; margin-top: 25px;">
-                <div class="navigation-button">
-                    <div class="d-flex inner-navigation" style="margin-left: 63%;">
-                        <!-- <div>
+    <!-- <img src="..." class="card-img-top" alt="..."> -->
+    <!-- <div class="card-body"> -->
+    <form style="margin: auto;width: 50%;" class="my-3">
+        <h4 class="heading card-header" style="margin-bottom: 4%;">Motorized Craft and Gear Survey</h4>
+        <div class=" mb-3 input-holder">
+            <label for="exampleInputEmail1" class="form-label">Enumerator ID</label>
+            <input type="number" class="form-control bg-light" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="Enter enumerator id">
+        </div>
+        <hr style="color: #c1c1c1;    margin-top: 25px;">
+        <div class="mb-3 input-holder">
+            <label for="exampleInputPassword1" class="form-label">Provisional Vessel ID</label>
+            <input type="number" class="form-control bg-light" id="exampleInputPassword1"
+                placeholder="Enter provisional vessel id">
+        </div>
+        <hr style="color: #c1c1c1;    margin-top: 25px;">
+        <div class="mb-5 pb-3 input-holder">
+            <label for="exampleInputPassword1" class="form-label">Vessel Class</label>
+            <select name="" class="bg-light">
+                <option value="individual">Motorized Marine</option>
+                <option value="Group">Motorized Coastal</option>
+                <option value="Group">Motorized River & Coastal</option>
+            </select>
+        </div>
+        <hr style="color: #c1c1c1;    margin-top: 25px;">
+        <div class="mb-3 input-holder">
+            <label for="exampleInputPassword1" class="form-label">Survey Location</label>
+            <input type="number" class="form-control bg-light" id="exampleInputPassword1"
+                placeholder="Enter provisional vessel id">
+        </div>
+        <hr style="color: #c1c1c1;    margin-top: 25px;">
+        <div class="mb-3 input-holder">
+            <label for="exampleInputEmail1" class="form-label">Vessel Name</label>
+            <input type="number" class="form-control bg-light" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <hr style="color: #c1c1c1;    margin-top: 25px;">
+        <div class="mb-3 input-holder">
+            <label for="exampleInputPassword1" class="form-label">Provisional Vessel ID</label>
+            <input type="number" class="form-control bg-light" id="exampleInputPassword1">
+        </div>
+        <hr style="color: #c1c1c1; margin-top: 25px;">
+        <div class="mb-5 pb-3 input-holder">
+            <label for="exampleInputPassword1" class="form-label">Name Engraved</label>
+            <select name="" class="bg-light">
+                <option value="individual">Yes</option>
+                <option value="Group">No</option>
+            </select>
+        </div>
+        <hr style="color: #c1c1c1; margin-top: 25px;">
+        <div class="navigation-button">
+            <div class="d-flex inner-navigation" style="margin-left: 63%;">
+                <!-- <div>
                     <a class="btn btn-dark" href="index.html">go back</a>
                 </div> -->
-                        <div style="">
-                            <a href="page1.html" class="btn btn-primary float-right" style="">Next Page</a>
-                        </div>
-
-                    </div>
+                <div style="">
+                    <a href="page1.html" class="btn btn-primary float-right" style="">Next Page</a>
                 </div>
-            </form>
-        <!-- </div> -->
+
+            </div>
+        </div>
+    </form>
+    <!-- </div> -->
     <!-- </div> -->
 
     <footer class="text-center">

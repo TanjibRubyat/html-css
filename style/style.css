@@ -5,7 +5,7 @@
 body {
     /* margin: 2%; */
     /* position: relative; */
-    overflow: auto;
+    /* overflow: auto; */
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -25,20 +25,22 @@ form {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
-.row{
+.row {
     margin-left: 7%;
     width: 87%;
 }
 
 .heading {
     /* background-image: linear-gradient(270deg, #ddd, #f7f7f7); */
-    background-image: linear-gradient(90deg,#683091,#f7f7f7);
+    background-image: linear-gradient(90deg, #683091, #f7f7f7);
     color: white;
     padding: 2%;
     font-size: 130%;
     width: 100%;
-    
+
 }
+
+
 
 .form-control {
     width: 96%;
@@ -75,7 +77,7 @@ form {
 
 .btn-primary {
     font-size: 79%;
-    
+
 }
 
 .btn-dark {
