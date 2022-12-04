@@ -1,0 +1,57 @@
+@media (max-width:640px) {
+    .fisheries {
+        font-size: 43%;
+    }
+
+    .card {
+        min-height: 31%;
+        top: 71%;
+    }
+
+
+    .side-text {
+        top: 84%;
+        font-size: 55%;
+    }
+
+    .list-group-item {
+        font-size: 66%;
+    }
+}
+
+@media (min-width:641px) and (max-width:1007px) {
+    .card {
+        min-height: 42%;
+        top: 59%;
+        width: 13%;
+    }
+
+    .user-img {
+        bottom: 79%;
+    }
+
+
+    .fisheries {
+        font-size: 76%;
+    }
+
+    .list-group-item {
+        font-size: 64%;
+    }
+
+    .side-text {
+        font-size: 76%;
+    }
+}
+
+@media (min-width:1008px) {
+    .fisheries {
+        font-size: 115%;
+    }
+
+    .user-img {
+        /* height: 40%; */
+        bottom: 80%;
+    }
+
+}
